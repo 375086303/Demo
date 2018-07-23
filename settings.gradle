@@ -1,0 +1,1 @@
+include ':app',':vitamio', ':map', ':photoview', ':texttospeet', ':list_select', ':retrofit'

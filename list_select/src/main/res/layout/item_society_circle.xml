@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/society_circle_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <RelativeLayout
+        android:layout_below="@+id/society_circle_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:id="@+id/society_circle_title" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/mLin"
+            android:background="@android:color/darker_gray"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imagee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/mtv_zan"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="赞"
+                android:textSize="15sp"
+                android:drawableLeft="@mipmap/new_thumbs_up"/>
+            <TextView
+                android:id="@+id/mtv_pinlun"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="评论"
+                android:textSize="15sp"
+                android:drawableLeft="@mipmap/news_message"/>
+        </LinearLayout>
+        <CheckBox
+            android:button="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/myschool_message"
+            android:id="@+id/imagee" />
+    </RelativeLayout>
+</LinearLayout>
